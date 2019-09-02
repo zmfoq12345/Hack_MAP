@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="1.33dp"
+    android:layout_height="wrap_content">
+    <!-- 타이틀바 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Notice -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:src="@drawable/popup" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/full"
+                android:layout_width="33dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/fullhr"
+                android:onClick="unheartbutton"
+                />
+            <Button
+                android:id="@+id/empty"
+                android:layout_width="33dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/emhr"
+                android:onClick="heartbutton"
+                />
+            <TextView
+                android:id="@+id/goodall"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:text="TextView"
+                android:textSize="12dp"
+                android:textColor="#673AB7" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="3dp"
+                android:text="정보 없음"
+                android:alpha="0.87"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/loc_img"-->
+<!--                    android:layout_width="130dp"-->
+<!--                    android:layout_height="130dp"-->
+<!--                    tools:srcCompat="@tools:sample/avatars" />-->
+
+                <TextView
+                    android:id="@+id/snippetText"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:alpha="0.87"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.87"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="확인"
+            android:textSize="15sp"
+            android:textColor="#ff7a00"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:onClick="mOnClose"/>
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>
